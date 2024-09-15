@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             emailCell.textContent = entry.email;
 
             const passwordCell = document.createElement('td');
-            passwordCell.textContent = entry.password.replace(/./g, '*'); // Mask the password
+            passwordCell.textContent = entry.password; // Display the password without masking
 
             const dobCell = document.createElement('td');
             dobCell.textContent = entry.dob;
